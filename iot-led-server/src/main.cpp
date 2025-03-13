@@ -1,19 +1,19 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
-const char * ssid = "virus5";
-const char * password = "a1b2c3d4";
+const char * ssid = "Franki";
+const char * password = "Jusadi4132";
 
 WiFiServer server(80);
 
 void conectarRedWifi(){
-  WiFi.begin(ssid, password);
-  Serial.println("Estableciendo conexion Wifi..");
-  while(WiFi.status() != WL_CONNECTED){
-    delay(1000);
-    Serial.println(".");
-  }
-  Serial.println("\nConexion de Wifi establecida");
+   WiFi.begin(ssid, password);
+   Serial.print("Estableciendo conexion WiFi..");
+   while(WiFi.status() != WL_CONNECTED) {
+     delay(1000);
+     Serial.print(".");
+   }
+   Serial.println("\nConectado a la red WiFi");
 }
 
 String getTipoCrifrado(wifi_auth_mode_t tipoCifrado){
@@ -55,7 +55,8 @@ void setup() {
   pinMode(2, OUTPUT);
   escanearRedes();
   conectarRedWifi();
-  Serial.println("IP local: "  + WiFi.localIP());
+  Serial.println("IP local: ");
+  Serial.println(WiFi.localIP());
   server.begin();
 }
 

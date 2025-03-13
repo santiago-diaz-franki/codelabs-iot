@@ -1,5 +1,4 @@
 #include <Arduino.h>
-
 #define LED 2
 
 /**
@@ -23,8 +22,8 @@ void loop(){
    * Loop que imprime un mensaje en el puerto serial y enciende y apaga un led cada segundo pero implementado de forma incorrecta
    */
   Serial.println("Hello World");
-  delay(1000); // Espera 1 segundo, No son buenas practicas usar delay ya que bloquea el microcontrolador y no permite ejecutar otras tareas
+  delay(3000); // Espera 1 segundo, No son buenas practicas usar delay ya que bloquea el microcontrolador y no permite ejecutar otras tareas
   digitalWrite(LED, HIGH);
-  delay(1000);
+  delay(3000);
   digitalWrite(LED, LOW);
 }
