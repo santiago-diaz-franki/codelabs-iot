@@ -14,11 +14,17 @@ Este Codelab tiene como objetivo la conexión de un dispositivo IoT a una **red 
 - Muestra información sobre la conexión establecida.
 - Permite realizar pruebas de conectividad y monitoreo.
 
-### 📡 Conexión WiFi con `libwifi`
+### 📡 iot-cliente-http
 Este módulo facilita la conexión de un dispositivo IoT a una red WiFi mediante la clase `libwifi`. Sus características incluyen:
 - Una función `conectarWifi(ssid, password)` para establecer la conexión de manera sencilla.
 - Mensajes de estado detallados en la consola serie para depuración.
 - Obtención y visualización de la dirección IP asignada al dispositivo.
+
+### 🌐 iot-cliente-http-datos-sensor
+Este Codelab establece una conexión mediante el **ESP32** para obtener los datos de un **sensor SHT31** y enviarlos a **Freeboard** para su visualización. El proyecto incluye:
+- Conexión a una red WiFi.
+- Lectura de los datos de temperatura y humedad del sensor SHT31.
+- Envío de los datos a un tablero en Freeboard para monitoreo en tiempo real.
 
 ## ✨✨ Uso del Repositorio
 Para clonar este repositorio en tu equipo, ejecuta:
