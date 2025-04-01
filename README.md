@@ -14,6 +14,12 @@ Este Codelab tiene como objetivo la conexión de un dispositivo IoT a una **red 
 - Muestra información sobre la conexión establecida.
 - Permite realizar pruebas de conectividad y monitoreo.
 
+### 📡 Conexión WiFi con `libwifi`
+Este módulo facilita la conexión de un dispositivo IoT a una red WiFi mediante la clase `libwifi`. Sus características incluyen:
+- Una función `conectarWifi(ssid, password)` para establecer la conexión de manera sencilla.
+- Mensajes de estado detallados en la consola serie para depuración.
+- Obtención y visualización de la dirección IP asignada al dispositivo.
+
 ## ✨✨ Uso del Repositorio
 Para clonar este repositorio en tu equipo, ejecuta:
 
