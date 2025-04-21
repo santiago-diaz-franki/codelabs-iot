@@ -46,9 +46,20 @@ services:
     volumes:
       - ./data:/var/lib/postgresql/data
     restart: always
+```
+### 🐍 mosquitto-project
+Este codelab contiene la configuración de **Mosquitto** para trabajar con MQTT en entornos IoT. En la carpeta encontrarás los siguientes elementos:
+- **`mosquitto.yml`**: Archivo de configuración para la ejecución de Mosquitto usando Docker Compose.
+- **`mosquitto/`**: Carpeta que contiene los archivos de configuración adicionales:
+  - **`acl`**: Control de acceso para Mosquitto.
+  - **`conf`**: Configuraciones personalizadas para Mosquitto.
+  - **`passwd`**: Archivo que contiene las credenciales de los usuarios.
+
+El propósito de esta carpeta es facilitar la configuración de un broker MQTT utilizando Mosquitto en un entorno de contenedores.
 
 ## ✨✨ Uso del Repositorio
 Para clonar este repositorio en tu equipo, ejecuta:
 
 ```sh
 git clone https://github.com/santiago-diaz-franki/codelabs-iot.git
+```
