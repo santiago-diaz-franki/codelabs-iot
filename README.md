@@ -26,6 +26,27 @@ Este Codelab establece una conexión mediante el **ESP32** para obtener los dato
 - Lectura de los datos de temperatura y humedad del sensor SHT31.
 - Envío de los datos a un tablero en Freeboard para monitoreo en tiempo real.
 
+### 🐳 ejemplo-compose
+Ejemplo básico del uso de **Docker Compose**, donde se explica cómo levantar múltiples servicios mediante un archivo `.yml`. Ideal para entender cómo orquestar servicios contenedorizados de manera sencilla.
+
+### 📊 ejemplo-compose-timescaledb
+En este codelab se muestra cómo implementar y levantar una base de datos **TimescaleDB** usando **Docker Compose**. Se explican los pasos necesarios y se incluye el siguiente archivo de configuración:
+
+```yaml
+services:
+  timescale:
+    image: timescale/timescaledb:latest-pg13
+    container_name: timescaledb
+    environment: 
+      POSGRESQL_DB: iot_data
+      POSGRESQL_USER: iot_data_user
+      POSTGRESQL_PASSWORD: a1b2c3d4
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    restart: always
+
 ## ✨✨ Uso del Repositorio
 Para clonar este repositorio en tu equipo, ejecuta:
 
